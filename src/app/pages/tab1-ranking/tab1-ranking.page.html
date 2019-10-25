@@ -1,0 +1,43 @@
+<ion-content>
+  <div class="my-ranking">
+    <div class="my-podiums">
+      <ion-row>
+        <ion-col class="my-podium" size="4">
+          <ion-avatar>
+            <img src="../../../assets/guild/1.jpg">
+          </ion-avatar>
+          <p class="">北京</p>
+          <p class="my-avatar-content">November 5, 1955</p>
+        </ion-col>
+        <ion-col class="my-podium"  size="4" class="my-champion">
+          <ion-avatar>
+            <img src="../../../assets/guild/1.jpg">
+          </ion-avatar>
+          <p>北京</p>
+          <p class="my-avatar-content">November 5, 1955</p>
+        </ion-col>
+        <ion-col class="my-podium"  size="4">
+          <ion-avatar>
+            <img src="../../../assets/guild/1.jpg">
+          </ion-avatar>
+          <p>北京</p>
+          <p class="my-avatar-content">November 5, 1955</p>
+        </ion-col>
+      </ion-row>
+
+    </div>
+    <ion-row class="my-change-btn">
+      <ion-col size="6">
+          <ion-button fill='clear' [color]="btnColor1" (click)="changeTab('left')" expand="full">综合成绩</ion-button>
+      </ion-col>
+      <ion-col size="6">
+          <ion-button fill='clear' [color]="btnColor2" (click)="changeTab('right')" expand="full" >活跃度</ion-button>
+      </ion-col>
+    </ion-row>
+    
+  </div>
+  <app-tab1-ranking-activity *ngIf='activity==="left"' ></app-tab1-ranking-activity>
+  <app-tab1-ranking-record *ngIf='activity==="right"'></app-tab1-ranking-record>
+
+</ion-content>
+

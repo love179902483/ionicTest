@@ -1,0 +1,39 @@
+
+
+:root {
+  --ion-safe-area-top: 20px;
+  --ion-safe-area-bottom: 22px;
+}
+.swiper-slide {
+  display: block;
+}
+
+ion-slide > h2 {
+  margin-top: 2.8rem;
+}
+ion-slide > img {
+  min-width: 100%;
+  max-height: 30%;
+}
+ion-content {
+  position: relative;
+}
+
+
+.my-header {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(183, 183, 183, 0.7);
+  position: relative;
+  z-index: 9;
+}
+
+.my-header ion-button {
+  line-height: 50px;
+  height: 50px;
+}
+.active-button {
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 5px solid #e8e63b;
+}

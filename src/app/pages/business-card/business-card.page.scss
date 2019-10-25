@@ -1,0 +1,38 @@
+.my-card-header {
+    ion-avatar {
+        margin-right: 10px;
+        height: 55px;
+        width: 55px;
+    }
+    .my-head-text{
+        margin: 0;
+        font-size: 40px;
+        p{
+            text-align: center;
+            height: 20px;
+            padding: 0 10px;
+            max-width: 100px;
+            border-radius: 3px;
+            line-height: 20px;
+            background-color: #e0d86c;
+            color: #353535;
+            font-size: 12px;
+        }
+    }
+  
+}
+
+
+h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #181818;
+}
+
+
+.my-show{
+    margin: 25px 0
+}
+.my-answer{
+    margin-bottom: 25px;
+}

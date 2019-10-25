@@ -1,0 +1,107 @@
+<ion-content fullscreen>
+  <ion-card >
+    <ion-item  color="favorite" class="my-card-header" lines='none'>
+      <ion-avatar>
+        <img [src]="user.head">
+      </ion-avatar>
+
+      <ion-label class='my-head-text'>
+        <h1>Gollum</h1>
+        <p>463 &nbsp;&nbsp; 积分</p>
+      </ion-label>
+
+      <ion-note class="my-head-set" slot='end'>
+        <h1>
+          <ion-icon name="build"></ion-icon>
+        </h1>
+        <p>设置 </p>
+      </ion-note>
+    </ion-item>
+    <ion-card-content >
+      <ion-row class="my-tab">
+        <ion-col size="3">
+          <button>
+            <fa-icon size='1x' [icon]="['fas', 'edit']"></fa-icon>
+            <p>我的作业</p>
+          </button>
+        </ion-col>
+        <ion-col size="3">
+          <button>
+            <fa-icon size='1x' [icon]="['far', 'comment-alt']"></fa-icon>
+            <p>我的话题</p>
+          </button>
+        </ion-col>
+        <ion-col size="3">
+
+          <button>
+            <ion-icon style="color:azure" slot="start" src='../../assets/svg/hand-holding-seedling.svg'></ion-icon>
+            <p>我的托起</p>
+          </button>
+        </ion-col>
+
+        <ion-col size="3">
+          <button>
+            <fa-icon size='1x' [icon]="['far','check-square']"></fa-icon>
+            <p>传达</p>
+          </button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="my-numbers">
+        <ion-col size="4">
+          <p>7</p>
+          <p>我的作业</p>
+        </ion-col>
+        <ion-col class="my-middile-col" size="4">
+          <p>7</p>
+          <p>我的作业</p>
+        </ion-col>
+        <ion-col size="4">
+          <p>7</p>
+          <p>我的作业</p>
+        </ion-col>
+      </ion-row>
+      <ion-list class="my-items">
+        <ion-item lines="none" color="favorite">
+          <ion-label slot='start'>@我的</ion-label>
+
+          <ion-note slot='end'>
+            <fa-icon size='1x' icon="angle-right"></fa-icon>
+          </ion-note>
+        </ion-item>
+        <ion-item lines="none" color="favorite">
+          <ion-label slot='start'>赞过我的</ion-label>
+
+          <ion-note slot='end'>
+            <fa-icon size='1x' icon="angle-right"></fa-icon>
+          </ion-note>
+        </ion-item>
+        <ion-item lines="none" color="favorite">
+          <ion-label slot='start'>评论过我的</ion-label>
+
+          <ion-note slot='end'>
+            <fa-icon size='1x' icon="angle-right"></fa-icon>
+          </ion-note>
+        </ion-item>
+      </ion-list>
+      <ion-row class="my-controll">
+          <ion-col size="4">
+              <img src="../../assets/head/2.jpg" alt="">
+              <p>草稿箱</p>
+          </ion-col>
+          <ion-col size="4" >
+              <div routerLink='/business-card'>
+                  <img  src="../../assets/head/2.jpg" alt="">
+                  <p>名片</p>
+              </div>
+              
+          </ion-col>
+          <ion-col size="4">
+              <img src="../../assets/head/2.jpg" alt="">
+              <p>积分</p>
+          </ion-col>
+        </ion-row>
+   
+    </ion-card-content>
+  </ion-card>
+</ion-content>

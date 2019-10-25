@@ -1,0 +1,29 @@
+
+
+
+<!-- <ion-router-outlet><ion-router-outlet> -->
+
+
+
+<ion-tabs>
+  <!-- <ion-button routerLink='/details'>
+    test click
+  </ion-button> -->
+  <ion-tab-bar class="bottom-tabs" slot="bottom" color="light">
+    <ion-tab-button [class.btn-action]="selected==='home'" 
+      tab="tab1" (click)="selected='home'">
+      <ion-icon  name="home"></ion-icon>
+      <ion-label>首页</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLink='/release' >
+      <ion-icon class='btn-release' name="add" ></ion-icon>
+      <!-- <ion-label>Gallery</ion-label> -->
+    </ion-tab-button>
+
+    <ion-tab-button [class.btn-action]="selected==='setting'" 
+      (click)="selected='setting'" tab="tab3">
+      <ion-icon name="ios-person-add"></ion-icon>
+      <ion-label>我的</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

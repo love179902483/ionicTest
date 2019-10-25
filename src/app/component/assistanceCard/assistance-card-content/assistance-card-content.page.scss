@@ -1,0 +1,57 @@
+ion-card{
+    margin: 0;
+}
+
+.my-task-card{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;   
+    position: relative;
+  
+    .my-task-card-content{
+        display: flex;
+        flex-direction: column;
+      
+        padding-right: 10px;
+        h2{  
+            height: 35px;
+            font-weight: bold;
+            line-height: 35px;
+            display: -webkit-box;
+            position:relative;
+            /*设置容器高度为3倍行高就是显示3行*/
+            overflow:hidden;
+        }
+        h2::after{
+            content:'...';
+            font-weight:bold;
+            position:absolute;
+            bottom:0;
+            right:0;
+            padding:0 10px 1px 10px;
+            background:#fff;
+            color: rgb(158, 158, 158);
+        }  
+      
+
+        p{  
+            font-size: 14 px;
+            display: -webkit-box;
+            position:relative;
+            line-height: 20px;
+            /*设置容器高度为3倍行高就是显示3行*/
+            max-height: 40px;
+            overflow:hidden;
+        }
+        p::after{
+            content:'...';
+            font-weight:bold;
+            position:absolute;
+            bottom:0;
+            right:0;
+            padding:0 10px 1px 10px;
+            background:#fff;
+            color: rgb(158, 158, 158);
+        }  
+    }
+}

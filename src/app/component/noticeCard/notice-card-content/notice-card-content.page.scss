@@ -1,0 +1,81 @@
+ion-card{
+    margin: 0;
+}
+
+.my-task-card{
+    display: flex;
+    justify-content: space-between;   
+    position: relative;
+    .my-task-card-time{
+        min-width: 100px;
+        height: 100px;
+        border: 4px solid #f7d460;
+        padding: 15px;
+        text-align: center;
+        margin-right: 20px;
+        p:first-child{
+            font-size: 25px;
+        }
+        p:last-child{
+            display: flex;
+            justify-content: space-between;   
+        }
+        > span{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #f7d460;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 25px;
+        }
+    } 
+    .my-task-card-content{
+        width: auto;
+        padding-right: 10px;
+        h2{  
+            height: 35px;
+            font-weight: bold;
+            line-height: 35px;
+            display: -webkit-box;
+            position:relative;
+            /*设置容器高度为3倍行高就是显示3行*/
+            overflow:hidden;
+        }
+        h2::after{
+            content:'...';
+            font-weight:bold;
+            position:absolute;
+            bottom:0;
+            right:0;
+            padding:0 10px 1px 10px;
+            background:#fff;
+            color: rgb(158, 158, 158);
+        }  
+      
+
+        p{  
+            font-size: 14 px;
+            display: -webkit-box;
+            position:relative;
+            line-height: 20px;
+            /*设置容器高度为3倍行高就是显示3行*/
+            height: 60px;
+            overflow:hidden;
+        }
+        p::after{
+            content:'...';
+            font-weight:bold;
+            position:absolute;
+            bottom:0;
+            right:0;
+            padding:0 10px 1px 10px;
+            background:#fff;
+            color: rgb(158, 158, 158);
+        }  
+    }
+}

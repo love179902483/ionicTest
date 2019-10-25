@@ -1,0 +1,49 @@
+.my-ranking {
+    width: 100%;
+    padding-top: 65px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(243, 195, 62, 0.84);
+}
+
+.my-podiums {
+    position: relative;
+}
+
+.my-podiums .my-podium {
+   text-align: center;
+}
+.my-podiums ion-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-podiums ion-col ion-avatar {
+    width: 80px;
+    height: 80px;
+    border: 5px solid #fcff3f;
+}
+
+.my-podiums ion-col p{
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.my-podiums ion-col .my-avatar-content{
+    border-top: 1px solid #ffffff;
+    padding: 5px;
+}
+
+.my-podiums ion-col:not(.my-champion){
+    padding-top: 60px;
+}
+
+// .my-change-btn {
+//     border-bottom: 1px solid #fcff3f;
+// }
+.my-change-btn ion-button {
+    background-color: rgba($color: #000000, $alpha: 0);
+}

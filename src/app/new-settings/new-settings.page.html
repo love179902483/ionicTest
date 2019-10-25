@@ -1,0 +1,57 @@
+
+<!-- <ion-split-pane>
+  <ion-menu contentId="content" >
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Awesome avocado menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="/setting/test" >test</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+
+  <ion-router-outlet id='content' main></ion-router-outlet>
+</ion-split-pane> -->
+<ion-content>
+    <app-task-card-header></app-task-card-header>
+    <app-task-card-content></app-task-card-content>
+
+    <app-card-view-header></app-card-view-header>
+    <app-card-view-content></app-card-view-content>
+
+    <fa-icon size='1x' [icon]="['far','check-square']"></fa-icon>
+    <ion-button contentId="content"  routerLink="/setting/test">
+      Click me
+    </ion-button>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Card Title</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-item>
+        <ion-icon name="pin" slot="start"></ion-icon>
+        <ion-label>ion-item in a card, icon left, button right</ion-label>
+        <ion-button fill="outline" slot="end">View</ion-button>
+      </ion-item>
+      
+      <ion-card-content>
+        This is content, without any paragraph or header tags,
+        within an ion-card-content element.
+      </ion-card-content>
+    </ion-card>
+
+<ion-content>
+
+  
+<ion-router-outlet id='content' main></ion-router-outlet>

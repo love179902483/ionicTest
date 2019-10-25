@@ -1,0 +1,41 @@
+<ion-content class="my-content">
+
+  <!-- fab placed in the center of the content with a list on each side -->
+
+
+  <div class="my-fab">
+    <div class="my-fab-btn">
+      <div class="my-fab-btn-start">
+        <ion-fab-button color="success">
+          <ion-icon name="arrow-dropleft"></ion-icon>
+        </ion-fab-button>
+        <p>发布作业</p>
+      </div>
+      <div class="my-fab-btn-end">
+        <ion-fab-button color="tertiary">
+          <ion-icon name="arrow-dropleft"></ion-icon>
+        </ion-fab-button>
+        <p>发布作业</p>
+      </div>
+      <div class="my-fab-btn-left">
+        <ion-fab-button color="danger">
+          <ion-icon name="arrow-dropleft"></ion-icon>
+        </ion-fab-button>
+        <p>发布作业</p>
+      </div>
+      <div class="my-fab-btn-right">
+        <ion-fab-button color="warning">
+          <ion-icon name="arrow-dropleft"></ion-icon>
+        </ion-fab-button>
+        <p>发布作业</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="my-close" slot="fixed" (click)="backPage()">
+          <fa-icon size='1x' [icon]="['fas','times']"></fa-icon>
+  </div>
+
+</ion-content>

@@ -1,0 +1,49 @@
+<ion-item color="favorite" lines='none'>
+    <div class="my-task-card-footer">
+        <ion-row>
+            <ion-col size="3">
+                <fa-icon class="task-finished" size='1x' [icon]="['far','thumbs-up']"></fa-icon>
+                <span>212</span>
+            </ion-col>
+            <ion-col size="3">
+                <fa-icon class="task-finished" size='1x' [icon]="['far','edit']"></fa-icon>
+                <span>212</span>
+            </ion-col>
+            <ion-col size="6">
+                2019-08-20
+            </ion-col>
+        </ion-row>
+        <ion-row class="my-progress-bar">
+            <ion-col size="3">
+                <p></p>
+                <p></p>
+            </ion-col>
+            <ion-col size="3">
+                <p></p>
+                <p></p>
+            </ion-col>
+            <ion-col size="3">
+                <p>已完成</p>
+                <p></p>
+            </ion-col>
+            <ion-col  size="3" (click)="ToggleThank()" >
+                <div [class.assistant-thank-open-down]='toggleThank' class="assistant-thank-open">
+                    <fa-icon size='1x' [icon]="['fas','angle-double-down']"></fa-icon>
+                </div>
+                <span >展开</span>
+            </ion-col>
+
+        </ion-row>
+
+    </div>
+
+</ion-item>
+<div class="my-progress-toggle" [class.my-progress-toggle-open] = 'toggleThank'>
+    <h2>
+        <fa-icon  size='1x' [icon]="['fas','handshake']"></fa-icon>
+        <span>友情答谢</span>
+    </h2>
+    <p>
+            感谢会长的大力支持，也感谢打通不及俱乐部王总的鼎力支持，目前项目已经顺利开展，谢谢师兄弟出谋划策。
+    </p>
+</div>
