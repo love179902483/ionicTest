@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-new-settings',
@@ -13,8 +15,12 @@ export class NewSettingsPage implements OnInit {
   } 
 
   // Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
-  constructor() { }
+  constructor(private router: Router, private dataService: DataService) { }
 
   ngOnInit() { }
   
+  jumpPage(){
+    this.dataService.setData(42, this.testData)
+    this.router.navigateByUrl('/login/42')
+  }
 }
