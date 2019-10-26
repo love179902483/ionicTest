@@ -23,10 +23,11 @@
     <app-card-view-header></app-card-view-header>
     <app-card-view-content></app-card-view-content>
 
-    <fa-icon size='1x' [icon]="['far','check-square']"></fa-icon>
-    <ion-button contentId="content"  routerLink="/setting/test">
+    <!-- <fa-icon size='1x' [icon]="['far','check-square']"></fa-icon> -->
+    <ion-button contentId="content" (click)="jumpPage()"  routerLink="/login">
       Click me
     </ion-button>
+
     <ion-card>
       <ion-card-header>
         <ion-card-title>Card Title</ion-card-title>
