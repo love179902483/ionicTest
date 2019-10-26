@@ -1,13 +1,14 @@
-<ion-card routerLink="/hot-content">
+<ion-card (click)="jumpToContent('/hot-content')">
   <ion-card-header>
-    <ion-card-title>{{data.title}}</ion-card-title>
+    <ion-card-title>{{content.title}}</ion-card-title>
   </ion-card-header>
   <ion-card-content>
-    {{data.content}}
+    <div [innerHTML]="content.content">
 
+    </div>
     <ion-row *ngIf="afterClassfication.images.length">
       <ion-col size="4" *ngFor="let i of afterClassfication.images">
-         <img [src]="i">
+        <img [src]="i">
       </ion-col>
     </ion-row>
 
@@ -20,7 +21,7 @@
 
     <ion-row *ngIf="afterClassfication.video.length===1">
       <ion-col size="12">
-         <img [src]="afterClassfication.video">
+        <img [src]="afterClassfication.video">
       </ion-col>
     </ion-row>
 
@@ -34,20 +35,20 @@
   <ion-row class="my-card-content">
     <ion-col size='3'>
       <button ion-button item-end color="light">
-          <fa-icon  size='1x' [icon]="['far','comments']"></fa-icon>
+        <fa-icon size='1x' [icon]="['far','comments']"></fa-icon>
         <span> 评论 12</span>
       </button>
 
     </ion-col>
     <ion-col size='3'>
       <button icon-start clear small>
-          <fa-icon  size='1x' [icon]="['far','thumbs-up']"></fa-icon>
+        <fa-icon size='1x' [icon]="['far','thumbs-up']"></fa-icon>
         <span> 点赞 12 </span>
       </button>
     </ion-col>
     <ion-col size='3'>
       <button icon-start clear small>
-          <fa-icon  size='1x' [icon]="['far','star']"></fa-icon>
+        <fa-icon size='1x' [icon]="['far','star']"></fa-icon>
         <span> 收藏 12 </span>
       </button>
     </ion-col>

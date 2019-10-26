@@ -1,0 +1,35 @@
+
+.my-card-content {
+    background-color: #fff;
+    margin-top: 10px;
+    ion-list{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    ion-list {
+        ion-item{
+            ion-avatar{
+                margin-right: 15px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        p{
+            margin: 0;
+            padding: 10px;
+            background-color: #fff;
+            font-size: 15px;
+            padding-left: 55px;
+        }
+    }
+}
+
+.my-card-content {
+    font-size: 16px;
+    padding: 10px;
+    button{
+        background-color: #fff;
+    }
+  
+}

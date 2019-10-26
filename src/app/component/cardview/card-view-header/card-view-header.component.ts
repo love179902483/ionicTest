@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-view-header',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-view-header.component.scss'],
 })
 export class CardViewHeaderComponent implements OnInit {
-
+  @Input() header
   constructor() { }
 
   ngOnInit() {}

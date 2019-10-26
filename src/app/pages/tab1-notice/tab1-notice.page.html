@@ -1,8 +1,8 @@
 <ion-content>
   <div class="my-card-list">
-    <div>
-      <app-notice-card-header></app-notice-card-header>
-      <app-notice-card-content></app-notice-card-content>
+    <div *ngFor="let item of notice; let i=index">
+      <app-notice-card-header [notice]='item["header"]'></app-notice-card-header>
+      <app-notice-card-content [notice]='item'></app-notice-card-content>
       <app-notice-card-footer></app-notice-card-footer>
     </div>
 

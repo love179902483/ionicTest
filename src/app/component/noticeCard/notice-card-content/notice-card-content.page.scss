@@ -35,7 +35,7 @@ ion-card{
         }
     } 
     .my-task-card-content{
-        width: auto;
+        width: 100%;
         padding-right: 10px;
         h2{  
             height: 35px;
@@ -56,8 +56,6 @@ ion-card{
             background:#fff;
             color: rgb(158, 158, 158);
         }  
-      
-
         p{  
             font-size: 14 px;
             display: -webkit-box;

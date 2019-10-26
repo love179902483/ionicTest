@@ -1,13 +1,15 @@
 <ion-item color="favorite" class="my-card-header" lines='none'>
     <ion-avatar>
-        <img src="../../../../assets/head/2.jpg">
+        <img [src]="notice['head']">
     </ion-avatar>
     <ion-label>
-        <h2>Gollum</h2>
-        <p>大同ＰＳ工作室 | ps 服务 | 加盟费: 30w</p>
+        <h2>{{notice['name']}}</h2>
+        <p>{{notice['motto']}}</p>
     </ion-label>
 
-    <fa-icon class="task-finished" color="success" *ngIf="showIcon==='finished'" size='1x' [icon]="['far','check-square']"></fa-icon>
-    <fa-icon class="task-unfinished" color="danger" *ngIf="showIcon==='unfinished'" size='1x' [icon]="['far','minus-square']"></fa-icon>
+    <fa-icon class="task-finished" color="success" *ngIf="showIcon==='finished'" size='1x'
+        [icon]="['far','check-square']"></fa-icon>
+    <fa-icon class="task-unfinished" color="danger" *ngIf="showIcon==='unfinished'" size='1x'
+        [icon]="['far','minus-square']"></fa-icon>
 
 </ion-item>

@@ -1,61 +1,37 @@
-<ion-card routerLink="/hot-content">
+<ion-card >
   <ion-card-header>
-    <ion-card-title>{{data.title}}</ion-card-title>
+    <ion-card-title>{{content.title}}</ion-card-title>
   </ion-card-header>
   <ion-card-content>
-    {{data.content}}
+    <div  [innerHTML]="content.content"></div>
+    <div *ngIf="content['afterClassfication'].images.length">
+      <ion-row *ngFor="let i of content['afterClassfication'].images">
+        <ion-col size="12"  >
+           <img [src]="i">
+        </ion-col>
+      </ion-row>
+    </div>
+    
 
-    <ion-row *ngIf="content.images.length">
-      <ion-col size="4" *ngFor="let i of content.images">
-         <img [src]="i">
+    <ion-row *ngIf="content['afterClassfication'].singleImage">
+      <ion-col size="12">
+        <img [src]="content['afterClassfication'].singleImage">
       </ion-col>
     </ion-row>
 
-    <ion-row *ngIf="content.singleImage">
+
+    <ion-row *ngIf="content['afterClassfication'].video.length===1">
       <ion-col size="12">
-        <img [src]="content.singleImage">
+         <img [src]="content['afterClassfication'].video">
       </ion-col>
     </ion-row>
 
-
-    <ion-row *ngIf="content.video.length===1">
+    <ion-row *ngIf="content['afterClassfication'].voice.length === 1">
       <ion-col size="12">
-         <img [src]="content.video">
-      </ion-col>
-    </ion-row>
-
-    <ion-row *ngIf="content.voice.length === 1">
-      <ion-col size="12">
-        <img [src]="content.voice">
+        <img [src]="content['afterClassfication'].voice">
       </ion-col>
     </ion-row>
 
   </ion-card-content>
-  <ion-row class="my-card-content">
-    <ion-col size='3'>
-      <button ion-button item-end color="light">
-          <fa-icon  size='1x' [icon]="['far','comments']"></fa-icon>
-        <span> 评论 12</span>
-      </button>
-
-    </ion-col>
-    <ion-col size='3'>
-      <button icon-start clear small>
-        <fa-icon  size='1x' [icon]="['far','thumbs-up']"></fa-icon>
-        <span> 点赞 12 </span>
-      </button> 
-    </ion-col>
-    <ion-col size='3'>
-      <button icon-start clear small>
-        <fa-icon  size='1x' [icon]="['far','star']"></fa-icon>
-        <span> 收藏 12 </span>
-      </button>
-    </ion-col>
-    <ion-col size='3' align-self-right text-right>
-      <button ion-button icon-end clear small>
-        <ion-icon name="warning"></ion-icon>
-        <span> 举报 </span>
-      </button>
-    </ion-col>
-  </ion-row>
+  
 </ion-card>

@@ -6,8 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tab1-chat.page.scss'],
 })
 export class Tab1ChatPage implements OnInit {
-
-  
   
 
   constructor() { }

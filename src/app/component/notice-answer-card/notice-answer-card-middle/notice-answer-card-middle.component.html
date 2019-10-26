@@ -1,0 +1,38 @@
+<div class="task-answer-middle">
+    <p>通知内容</p>
+    <div class="task-answer-middle-content">
+        <p [innerHTML]="notice.content"></p>
+        <div *ngFor="let item of notice.path">
+            <img [src]="item['url']" alt="">
+        </div>
+
+    </div>
+    <div>
+        <p *ngFor="let item of notice.hasNoticed">
+            <ion-avatar>
+                <img [src]="item.head">
+            </ion-avatar>
+            <span>{{item.name}}</span>
+            <span>提交了作业</span>
+        </p>
+
+        <span (click)="noticeListOpen()">排行榜</span>
+    </div>
+</div>
+<div *ngIf="openNoticeList" class="answer-pop" slot="fixed">
+    <ul class="pop-content">
+        <li>
+            报名表
+        </li>
+        <li *ngFor="let item of notice.noticedList">
+            <p>{{item.company}}</p>
+            <p>{{item.name}}</p>
+            <p>{{item.number}}人</p>
+        </li>
+
+    </ul>
+    <div (click)="noticeListOpen()">
+        <ion-icon name="close-circle-outline"></ion-icon>
+    </div>
+
+</div>

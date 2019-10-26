@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-notice-card-header',
@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./notice-card-header.page.scss'],
 })
 export class NoticeCardHeaderPage implements OnInit {
-  showIcon:string = 'finished';
+  showIcon: string = 'finished';
+
+  @Input() notice;
+
   constructor() { }
 
   ngOnInit() {

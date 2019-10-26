@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataService } from '../../services/data.service';
+
+import { data, HotDataType } from '../../hot.config';
+import { images } from '../../hotImg.config';
 
 @Component({
   selector: 'app-tab1-hot',
@@ -7,9 +12,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab1HotPage implements OnInit {
 
-  constructor() { }
+  data: HotDataType[] = data;
+  images = images;
 
+
+  constructor(private router: Router, private dataService: DataService) { }
   ngOnInit() {
+    console.log(data)
+  }
+
+  onClick() {
   }
 
 }

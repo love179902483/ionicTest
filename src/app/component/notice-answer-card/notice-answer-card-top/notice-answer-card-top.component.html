@@ -1,0 +1,17 @@
+<div class="task-anser-top">
+    <div>
+        <p>
+            <ion-avatar>
+                <img [src]="notice['header']['head']">
+            </ion-avatar>
+            <span>{{notice['header']['name']}}</span>
+            <span>发布了作业</span>
+        </p>
+        <p>{{notice['title']}}</p>
+        <p>
+            <fa-icon class="task-finished" color="success" size='1x' [icon]="['far','calendar-check']"></fa-icon>
+            <span>发布时间：{{notice.timeStart.timeYear}}/{{notice.timeStart.timeMonth}}/{{notice.timeStart.timeDay}}</span>
+            <span>截止时间：{{notice.timeEnd.timeYear}}/{{notice.timeEnd.timeMonth}}/{{notice.timeEnd.timeDay}}</span>
+        </p>
+    </div>
+</div>

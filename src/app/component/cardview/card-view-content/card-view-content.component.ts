@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { all } from 'q';
+import { DataService } from '../../../services/data.service';
+import { Router } from '@angular/router';
+import { HotDataType } from '../../../hot.config';
 
 @Component({
   selector: 'app-card-view-content',
@@ -7,33 +10,8 @@ import { all } from 'q';
   styleUrls: ['./card-view-content.component.scss'],
 })
 export class CardViewContentComponent implements OnInit {
-
-  data = {
-    title: '企航集团一年一度《管理营销大系统》镇海来袭！',
-    content: '起航资源平台共享！最新商业模式，如何制定自己家企业的系统，如何转型《管理营销大系统》课程（2019年11月4日-1日）',
-    path : [
-      {
-        url:'../../../../assets/images/image1.jpeg',
-        type: 'image',
-      },
-      {
-        url:'',
-        type: 'video',
-      },
-      {
-        url:'../../../../assets/images/image3.png',
-        type: 'image',
-      },
-      {
-        url:'../../../../assets/images/image2.png',
-        type: 'image',
-      },
-      {
-        url:'',
-        type: 'voice',
-      }
-    ]
-  }
+ 
+  @Input() content: HotDataType
 
   path = [
     {
@@ -87,11 +65,19 @@ export class CardViewContentComponent implements OnInit {
     }
   }
 
-  constructor() { }
-
+  constructor(private router: Router, private dataService: DataService) { }
   ngOnInit() {
-    this.classification(this.data.path)
-    console.log(this.afterClassfication)
+    if(this.content.hasOwnProperty('path') === true){
+      // console.log(this.content['path'])
+      this.classification(this.content.path)
+      this.content['afterClassfication'] = this.afterClassfication;
+    }
+   
+  }
+
+  jumpToContent(jumpUrl) {
+    this.dataService.setData(42, this.content)
+    this.router.navigateByUrl(`${jumpUrl}/42`)
   }
 
 }

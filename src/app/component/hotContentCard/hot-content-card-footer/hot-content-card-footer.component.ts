@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-hot-content-card-footer',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hot-content-card-footer.component.scss'],
 })
 export class HotContentCardFooterComponent implements OnInit {
+  @Input() content;
 
   constructor() { }
 

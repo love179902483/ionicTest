@@ -7,18 +7,13 @@ ion-card {
     margin-top: 10px
 }
 
-.my-card-content button{
-    background-color: #fff;
-    font-size: 13px;
-   
-}
 
-.my-card-content ion-icon {
-    font-size: 15px;
-}
-.my-card-content {
-    margin: 10px;
-}
 ion-col {
     padding: 0 1px;
+  
+}
+ion-card-content {
+    ion-row{
+        padding: 10px 0;
+    }
 }

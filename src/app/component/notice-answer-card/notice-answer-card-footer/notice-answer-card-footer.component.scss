@@ -1,0 +1,46 @@
+.answer-footer{
+    width: 100%;
+    background-color: #fff;
+    >p{
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #f5f5f5;
+        margin: 0;
+        font-size: 16px;
+    }
+    .answer-default{
+        color: #929292;
+        background-color: #f5f5f5;
+        p{
+            font-size: 13px;
+        }
+    }
+    ion-row{
+        padding: 15px;
+        ion-col{
+            p{
+                margin:0;
+            }
+            .company{
+                text-align: center;
+            }
+            input{
+                width: 100%;
+                padding: 0;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                outline: none;
+                border-bottom: 1px solid #eeeeee;
+                height: 20px;
+            }
+            textarea{
+                width: 100%;
+                border: 1px solid #eeeeee;
+            }
+        }
+    }
+    #answer-submmit{
+        background-color:#f8db4c
+    }
+}

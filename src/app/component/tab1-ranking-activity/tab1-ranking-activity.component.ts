@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class Tab1RankingActivityComponent implements OnInit {
 
   @Input() content
-
+  
   constructor() { }
 
   ngOnInit() {}

@@ -1,23 +1,22 @@
 <ion-content class="hot-page">
   <div class="my-slide">
     <ion-slides>
-      <ion-slide>
-        <img src="../../../assets/inventory/1.jpg" />
-      </ion-slide>
+      <ion-slide *ngFor="let item of images; let i=index">
+        <img [src]="item['url']" />
+        <div>
+        </div>
 
-      <ion-slide>
-        <img src="../../../assets/inventory/2.jpg" />
-      </ion-slide>
-
-      <ion-slide>
-        <img src="../../../assets/inventory/topImg_01.jpeg" />
       </ion-slide>
     </ion-slides>
   </div>
+  <ion-button (click)="onClick()">
+    Click me
+  </ion-button>
 
-  <div class="my-card">
-    <app-card-view-header></app-card-view-header>
-    <app-card-view-content></app-card-view-content>
+  <div class="my-card" *ngFor="let item of data; let i=index">
+    <app-card-view-header [header]='item["cardHeader"]'></app-card-view-header>
+
+    <app-card-view-content [content]='item'></app-card-view-content>
   </div>
 
 </ion-content>

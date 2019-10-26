@@ -19,6 +19,15 @@ ion-card {
 .my-card-content {
     margin: 10px;
 }
-ion-col {
-    padding: 0 1px;
+ion-card-content {
+    padding-bottom: 0;
+    ion-col{
+        margin-top: 15px;
+        padding: 0 1px;
+        img{
+            height: 13vh;
+            object-fit: cover;
+           
+        }
+    }
 }
