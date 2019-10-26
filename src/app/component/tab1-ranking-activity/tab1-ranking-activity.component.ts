@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tab1-ranking-activity',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab1RankingActivityComponent implements OnInit {
 
-  
+  @Input() content
 
   constructor() { }
 

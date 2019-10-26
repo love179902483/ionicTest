@@ -25,7 +25,7 @@
         }
         p:last-child{
             width: 100%;
-            background-color: green;
+            background-color: rgb(219, 219, 219);
             height: 10px;
         }
     }
@@ -46,6 +46,39 @@
         padding-right: 2px;
     }
 }
+.my-progress-bar-1 {
+    ion-col:first-child{
+        p:last-child{
+            background-color: rgb(4, 199, 118);
+        }
+    }
+  
+}
+.my-progress-bar-2 {
+    ion-col:first-child{
+        p:last-child{
+            background-color:rgb(4, 199, 118);
+        }
+    }
+    ion-col:nth-child(2){
+        p:last-child{
+            background-color:  rgb(4, 158, 94);
+        }
+    }
+}
+.my-progress-bar-3 {
+    ion-col{
+        p:last-child{
+            background-color: rgb(2, 138, 81);
+        }
+    }
+    
+}
+
+
+
+
+
 
 .my-progress-toggle{
     width: 100%;

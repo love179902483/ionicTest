@@ -1,0 +1,42 @@
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+}
+
+.my-tamping-left{
+    height: 100%;
+    overflow: scroll;
+    user-select: none;
+    li{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 5px;
+        p{
+            text-align: center;
+            padding: 3px;
+            margin: 0;
+           
+            padding:  2px;
+        }
+        p:first-child{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        p:last-child{
+            font-size: 12px;
+        }
+    }
+}
+
+.active-btn{
+    color: #f8db4c;
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+}

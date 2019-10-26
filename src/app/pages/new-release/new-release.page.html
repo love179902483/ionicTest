@@ -1,41 +1,69 @@
-<ion-content class="my-content">
+<ion-content class="my-content" color="favorite">
+  <div>
 
-  <!-- fab placed in the center of the content with a list on each side -->
-
-
-  <div class="my-fab">
-    <div class="my-fab-btn">
-      <div class="my-fab-btn-start">
-        <ion-fab-button color="success">
-          <ion-icon name="arrow-dropleft"></ion-icon>
-        </ion-fab-button>
-        <p>发布作业</p>
-      </div>
-      <div class="my-fab-btn-end">
-        <ion-fab-button color="tertiary">
-          <ion-icon name="arrow-dropleft"></ion-icon>
-        </ion-fab-button>
-        <p>发布作业</p>
-      </div>
-      <div class="my-fab-btn-left">
-        <ion-fab-button color="danger">
-          <ion-icon name="arrow-dropleft"></ion-icon>
-        </ion-fab-button>
-        <p>发布作业</p>
-      </div>
-      <div class="my-fab-btn-right">
-        <ion-fab-button color="warning">
-          <ion-icon name="arrow-dropleft"></ion-icon>
-        </ion-fab-button>
-        <p>发布作业</p>
-      </div>
-
-    </div>
+  </div>
+  <div slot="fixed" class="my-btns">
+    <ion-row>
+      <ion-col size="4"></ion-col>
+      <ion-col  size="4">
+        <div  class="icon-1" >
+            <fa-icon size='1x' [icon]="['fas','edit']"></fa-icon>
+        </div>
+       
+        <span>作业</span>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+          <div class="icon-2" >
+              <fa-icon size='1x' [icon]="['far','newspaper']"></fa-icon>
+          </div>
+       
+        <span>记名传达</span>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+      <ion-col size="4">
+          <div class="icon-3" >
+              <fa-icon size='1x' [icon]="['fas','volume-up']"></fa-icon>
+          </div>
+        
+        <span>报名传达</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+          <div class="icon-4">
+              <fa-icon  size='1x' [icon]="['far','handshake']"></fa-icon>
+          </div>
+        
+        <span>托起</span>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+      <ion-col size="4">
+          <div class="icon-5" >
+              <fa-icon size='1x' [icon]="['far','comments']"></fa-icon>
+          </div>
+        
+        <span>话题</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4"></ion-col>
+      
+      <ion-col size="4" (click)="backPage()">
+          <div class="icon-6">
+              <fa-icon  size='1x' [icon]="['far','window-close']"></fa-icon>
+          </div>
+        
+      </ion-col>
+      <ion-col size="4"></ion-col>
+    </ion-row>
   </div>
 
-
+<!-- 
   <div class="my-close" slot="fixed" (click)="backPage()">
-          <fa-icon size='1x' [icon]="['fas','times']"></fa-icon>
-  </div>
+    <fa-icon size='1x' [icon]="['fas','times']"></fa-icon>
+  </div> -->
 
 </ion-content>

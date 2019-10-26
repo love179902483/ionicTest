@@ -1,30 +1,21 @@
-<ion-content>
+<ion-content color="favorite">
   <div class="my-ranking">
     <div class="my-podiums">
       <ion-row>
-        <ion-col class="my-podium" size="4">
+        <ion-col *ngFor='let item of winner; let i=index'
+         class="my-podium" size="4">
           <ion-avatar>
-            <img src="../../../assets/guild/1.jpg">
+            <img [src]="item['header']">
           </ion-avatar>
-          <p class="">北京</p>
-          <p class="my-avatar-content">November 5, 1955</p>
-        </ion-col>
-        <ion-col class="my-podium"  size="4" class="my-champion">
-          <ion-avatar>
-            <img src="../../../assets/guild/1.jpg">
-          </ion-avatar>
-          <p>北京</p>
-          <p class="my-avatar-content">November 5, 1955</p>
-        </ion-col>
-        <ion-col class="my-podium"  size="4">
-          <ion-avatar>
-            <img src="../../../assets/guild/1.jpg">
-          </ion-avatar>
-          <p>北京</p>
-          <p class="my-avatar-content">November 5, 1955</p>
+          <p class="">{{item['position']}} . {{item['parent']}}</p>
+          <p class="my-avatar-content">
+              <fa-icon  size='1x' [icon]="['fas','eject']"></fa-icon>
+              <span>{{item['average']}}</span>
+              <fa-icon  size='1x' [icon]="['fas','thermometer-full']"></fa-icon>
+              <span>{{item['score']}}</span>
+            </p>
         </ion-col>
       </ion-row>
-
     </div>
     <ion-row class="my-change-btn">
       <ion-col size="6">
@@ -36,8 +27,8 @@
     </ion-row>
     
   </div>
-  <app-tab1-ranking-activity *ngIf='activity==="left"' ></app-tab1-ranking-activity>
-  <app-tab1-ranking-record *ngIf='activity==="right"'></app-tab1-ranking-record>
+  <app-tab1-ranking-activity [content]='content' *ngIf='activity==="left"' ></app-tab1-ranking-activity>
+  <app-tab1-ranking-record [content]='content' *ngIf='activity==="right"'></app-tab1-ranking-record>
 
 </ion-content>
 

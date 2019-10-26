@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { myconfig, MyConfigType } from '../../my.config';
+import { NavController } from '@ionic/angular';
+
 
 
 @Component({
@@ -11,9 +13,11 @@ export class BusinessCardPage implements OnInit {
 
   user:MyConfigType = myconfig
 
-  constructor() { }
+  constructor( public navCtrl: NavController) { }
 
   ngOnInit() {
   }
-
+  backPage(){
+    this.navCtrl.goBack()
+  }
 }

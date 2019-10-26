@@ -1,0 +1,27 @@
+.my-task-card-footer {
+    font-size: 12px;
+    width: 100%;
+    ion-col:first-child{
+        text-align: left;
+        span{
+            margin-left: 15px;
+        }
+    }
+    ion-col:last-child{
+        text-align: right;
+    }
+
+}
+
+.my-card-content button{
+    background-color: #fff;
+    font-size: 13px;
+   
+}
+
+.my-card-content ion-icon {
+    font-size: 15px;
+}
+.my-card-content {
+    margin: 10px;
+}

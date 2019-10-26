@@ -1,0 +1,8 @@
+
+
+<ul  class="my-tamping-left">
+  <li [class.active-btn]="i===activeBtn" *ngFor="let item of tampingContent['data']; let i = index" (click)="onClick(i)">
+      <p>{{i+1}}</p>
+      <p>{{item['menu']['name']}}</p>
+  </li>
+</ul>

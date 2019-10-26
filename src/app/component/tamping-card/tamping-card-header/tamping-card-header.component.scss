@@ -1,0 +1,24 @@
+.my-card-header ion-avatar {
+    margin-right: 10px;
+}
+
+.my-card-header .item-inner{
+    border-bottom: 0px;
+}
+
+
+
+.my-card-header{
+    .task-finished{
+        color: rgb(57, 153, 1);
+    }
+    .task-unfinished{
+        color: rgb(236, 44, 44);
+    }
+    p {
+        color: #b3b3b3;
+    }
+}
+// ion-item {
+//     border: 0px;
+// }

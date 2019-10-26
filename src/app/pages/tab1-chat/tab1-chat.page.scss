@@ -1,0 +1,21 @@
+ion-content{
+    background-color: rgb(206, 206, 206);
+}
+
+.my-tamping{
+    background-color: #fff;
+    display: flex;
+    padding-top: 50px;
+    height: 100%;
+    div:first-child{
+        width: 20%;
+        height: 100%;
+        box-sizing: border-box;
+        border-right: 1px solid #f5f5f5;
+    }
+    div:last-child{
+        width: 80%;
+        height: 100%;
+    }
+    
+}

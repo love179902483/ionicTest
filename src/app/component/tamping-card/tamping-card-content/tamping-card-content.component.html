@@ -1,0 +1,35 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>{{data.title}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    {{data.content}}
+
+    <ion-row *ngIf="afterClassfication.images.length">
+      <ion-col size="4" *ngFor="let i of afterClassfication.images">
+         <img [src]="i">
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="afterClassfication.singleImage">
+      <ion-col size="12">
+        <img [src]="afterClassfication.singleImage">
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row *ngIf="afterClassfication.video.length===1">
+      <ion-col size="12">
+         <img [src]="afterClassfication.video">
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="afterClassfication.voice.length === 1">
+      <ion-col size="12">
+        <img [src]="afterClassfication.voice">
+      </ion-col>
+    </ion-row>
+
+  </ion-card-content>
+ 
+</ion-card>

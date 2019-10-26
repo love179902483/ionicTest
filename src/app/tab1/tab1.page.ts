@@ -38,7 +38,7 @@ export class Tab1Page {
       url: '/tabs/tab1/notice'
     },
     {
-      title: "话题",
+      title: "十大夯实",
       name: 'chat',
       url: '/tabs/tab1/chat'
     },

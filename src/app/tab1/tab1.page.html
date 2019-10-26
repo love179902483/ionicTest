@@ -4,7 +4,7 @@
   <div class="my-header row row-center" slot="fixed">
     <ion-buttons slot="secondary">
       <ion-button *ngFor="let p of paths" (click)="geturl(p)"
-       contentId="mytheme" [class.active-button]="p.name===activeItem"  [routerLink]="p.url">
+       contentId="mytheme"  [class.active-tamping]="p.name==='chat'" [class.active-button]="p.name===activeItem"  [routerLink]="p.url">
         {{p.title}}
       </ion-button>
     </ion-buttons>

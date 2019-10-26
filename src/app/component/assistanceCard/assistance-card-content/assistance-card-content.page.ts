@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-assistance-card-content',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./assistance-card-content.page.scss'],
 })
 export class AssistanceCardContentPage implements OnInit {
+
+  @Input() assistContent
+  
 
   constructor() { }
 

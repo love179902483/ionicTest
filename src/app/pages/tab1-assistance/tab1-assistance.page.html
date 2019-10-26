@@ -1,25 +1,11 @@
 <ion-content>
   <div class="my-card-list">
-    <div>
+    <div *ngFor="let item of assistanceItems; let i = index">
       <app-assistance-card-header></app-assistance-card-header>
-      <app-assistance-card-content></app-assistance-card-content>
-      <app-assistance-card-footer></app-assistance-card-footer>
+      <app-assistance-card-content [assistContent]="item['content']"></app-assistance-card-content>
+      <app-assistance-card-footer [assistFooter]="item['footer']"></app-assistance-card-footer>
     </div>
-    <div>
-      <app-assistance-card-header></app-assistance-card-header>
-      <app-assistance-card-content></app-assistance-card-content>
-      <app-assistance-card-footer></app-assistance-card-footer>
-    </div>
-    <div>
-      <app-assistance-card-header></app-assistance-card-header>
-      <app-assistance-card-content></app-assistance-card-content>
-      <app-assistance-card-footer></app-assistance-card-footer>
-    </div>
-    <div>
-      <app-assistance-card-header></app-assistance-card-header>
-      <app-assistance-card-content></app-assistance-card-content>
-      <app-assistance-card-footer></app-assistance-card-footer>
-    </div>
+  
   </div>
 
 

@@ -1,0 +1,48 @@
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+    border-bottom: 1px solid #eeeeee;
+    padding: 5px 15px;
+}
+
+.my-tamping-right{
+    >div{
+        height: 100%;
+      
+        li:first-child{
+            font-size: 20px;
+        }
+        li:not(:first-child){
+            position: relative;
+            p{
+                padding-right: 30px;
+                font-size: 14px;
+                line-height: 25px;
+                color: #6d6d6d;
+            }
+         fa-icon{
+            position: absolute;
+            top: 22px;
+            right: 15px;
+        }
+          
+        }
+    }
+    
+}
+.active-icon-green{
+    color: rgb(31, 158, 6)
+}
+.active-icon-red{
+    color: rgb(255, 64, 6);
+}
+
+// fa-icon:first-child{
+//     color: rgb(3, 160, 3);
+// }

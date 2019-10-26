@@ -1,3 +1,14 @@
-<p>
-  tab1-ranking-record works!
-</p>
+<ion-list >
+    
+    <ion-item-divider *ngFor='let item of content; let i=index' color="favorite">
+        <ion-label slot='start' class="my-note-first">
+            {{i+4}}
+        </ion-label>
+        <ion-label class="my-note-second">{{item['name']}}</ion-label>
+        <ion-label slot='end' class="my-note-third">{{item['score']}}</ion-label>
+        <ion-label slot='end' class="my-note-fouth">
+          <fa-icon class="color-green" *ngIf="item['trend']==='0'"  size='1x' [icon]="['fas','arrow-up']"></fa-icon>
+          <fa-icon class="color-red" *ngIf="item['trend']==='1'" size='1x' [icon]="['fas','arrow-down']"></fa-icon>
+        </ion-label>
+    </ion-item-divider>
+</ion-list>

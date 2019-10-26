@@ -1,6 +1,6 @@
 <ion-content fullscreen>
-  <ion-card>
-    <ion-item class="my-card-header" lines='none'>
+  <ion-card color='favorite'>
+    <ion-item class="my-card-header"  color='favorite' lines='none'>
       <ion-avatar>
         <img [src]="user.head">
       </ion-avatar>
@@ -76,4 +76,9 @@
 
     </ion-card-content>
   </ion-card>
+  
+  <div class="my-close" slot="fixed" (click)="backPage()">
+      <fa-icon size='1x' [icon]="['fas','times']"></fa-icon>
+</div>
+
 </ion-content>

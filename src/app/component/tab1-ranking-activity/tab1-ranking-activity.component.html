@@ -1,14 +1,14 @@
-<ion-list>
+<ion-list >
     
-      <ion-item-divider>
+      <ion-item-divider *ngFor='let item of content; let i=index' color="favorite">
           <ion-label slot='start' class="my-note-first">
-              1
+              {{i+4}}
           </ion-label>
-          <ion-label class="my-note-second">杭州分会</ion-label>
-          <ion-label slot='end' class="my-note-third">3.12</ion-label>
+          <ion-label class="my-note-second">{{item['name']}}</ion-label>
+          <ion-label slot='end' class="my-note-third">{{item['average']}}</ion-label>
           <ion-label slot='end' class="my-note-fouth">
-              <ion-icon color='success' name="trending-up"></ion-icon>
-              <ion-icon color='danger' name="trending-down"></ion-icon>
+            <fa-icon class="color-green" *ngIf="item['trend']==='0'"  size='1x' [icon]="['fas','arrow-up']"></fa-icon>
+            <fa-icon class="color-red" *ngIf="item['trend']==='1'" size='1x' [icon]="['fas','arrow-down']"></fa-icon>
           </ion-label>
       </ion-item-divider>
 </ion-list>

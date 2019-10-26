@@ -1,0 +1,16 @@
+<div class="my-tamping-right" *ngFor="let item of tampingContent['data']; let i=index">
+  <div *ngIf="i===tampingContent['clickid']">
+    <ul >
+      <li>
+        {{item['content']['title']}}
+      </li>
+      <li *ngFor="let liItem of item['content']['items']; let i = index">
+        <fa-icon class="active-icon-green" *ngIf="i%2===0" size='1x' [icon]="['fas','check']"></fa-icon>
+        <fa-icon class="active-icon-red" *ngIf="i%2!==0" size='1x' [icon]="['fas','times']"></fa-icon>
+        <p [innerHTML]="liItem['content']"></p>
+      </li>
+
+    </ul>
+  </div>
+
+</div>

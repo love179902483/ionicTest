@@ -1,67 +1,54 @@
-
-.my-content{
-    display: flex;
-}
-
-.my-fab {
-    padding: 15%;
-    display: flex;
+.my-btns{
     width: 100%;
-    height: 80vh;
+    bottom: 10px;
     position: fixed;
-    top: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.my-fab-btn {
-    width: 80px;
-    height: 80px;
-    // background-color: green;
-    position: relative;
-}
-.my-fab-btn ion-fab-button {
-    width: 80px;
-    height: 80px;
-
-}
-.my-fab-btn p {
-    margin: 0 5px;
-}
-
-.my-fab-btn-start {
-    position: absolute;
-    top: -80px;
-    left: 0px;
-    text-align: center;
-}
-.my-fab-btn-end {
-    position: absolute;
-    top: 80px;
-    left: 0px;
-    text-align: center;
-}
-.my-fab-btn-left {
-    position: absolute;
-    left: -80px;
-    top: 0;
-    text-align: center;
-}
-.my-fab-btn-right {
-    position: absolute;
-    left: 80px;
-    top: 0px;
-    text-align: center;
+    ion-row{
+        margin-bottom: 20px;
+        ion-col{
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            div{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                box-shadow: 1px , 4px, 4px, #888888;
+                text-align: center;
+                line-height: 70px;
+                margin-bottom: 10px;
+            }
+            span{
+                color: #888888;
+                font-size: 14px;
+            }
+            
+        }
+    }
+   
 }
 
 
+.icon-1{
+    background-image: linear-gradient(to top, rgb(250, 206, 12) , rgb(250, 250, 185));
+}
+.icon-2{
+    background-image: linear-gradient(to top, rgb(9, 183, 252) , rgb(196, 228, 247));
+}
 
-.my-close {
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    font-size: 50px;
+.icon-3{
+    background-image: linear-gradient(to top, rgb(250, 127, 12) , rgb(250, 203, 185));
+}
+.icon-4{
+    background-image: linear-gradient(to top, rgb(12, 234, 250) , rgb(185, 250, 244));
+}
+
+.icon-5{
+    background-image: linear-gradient(to top, rgb(9, 252, 171) , rgb(196, 247, 226));
+}
+.icon-6{
+    background-image: linear-gradient(to top, rgb(250, 127, 12) , rgb(250, 203, 185));
 }

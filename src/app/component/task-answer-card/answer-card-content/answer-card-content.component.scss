@@ -1,0 +1,31 @@
+.task-answer-middle{
+    width: 100%;
+    background-color: #fff;
+    >p{
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #f5f5f5;
+        margin: 0;
+    }
+    .task-answer-middle-content{
+        padding: 14px;
+        >p{
+            margin: 0 0 15px 0;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    >div:last-child{
+        border-top: 1px solid #f5f5f5;
+        padding: 8px 15px;
+        display: flex;
+        p{
+            font-size: 14px;
+            margin-right: 20px;
+            span{
+                margin-left: 5px;
+            }
+        }
+       
+    }
+}

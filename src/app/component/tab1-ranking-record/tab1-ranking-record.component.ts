@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tab1-ranking-record',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tab1-ranking-record.component.scss'],
 })
 export class Tab1RankingRecordComponent implements OnInit {
-
+  @Input() content
   constructor() { }
 
   ngOnInit() {}

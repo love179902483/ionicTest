@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab1ChatPage implements OnInit {
 
+  
+  
+
   constructor() { }
 
   ngOnInit() {
