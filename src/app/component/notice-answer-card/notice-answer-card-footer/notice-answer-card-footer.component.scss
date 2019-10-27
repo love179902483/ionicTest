@@ -1,3 +1,13 @@
+
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
 .answer-footer{
     width: 100%;
     background-color: #fff;
@@ -43,4 +53,42 @@
     #answer-submmit{
         background-color:#f8db4c
     }
+}
+
+
+
+
+.answer-footer-bao{
+    background-color: #fff;
+    width: 100%;
+    >ul{
+        margin-bottom: 50px;
+        li:first-child{
+            text-align: center;
+        };
+        li{
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            p{
+                font-size: 14px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    >div{
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        ion-button{
+            font-size: 18px;
+        }
+    }
+}
+.font-green{
+    color: green;
+}
+.font-red{
+    color: red
 }

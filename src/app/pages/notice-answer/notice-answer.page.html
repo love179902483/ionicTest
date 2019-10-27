@@ -1,5 +1,6 @@
 <ion-toolbar>
-  <ion-title>报名详情</ion-title>
+  <ion-title *ngIf="notice.type==='0'">报名详情</ion-title>
+  <ion-title *ngIf="notice.type==='1'">记名详情</ion-title>
   <ion-buttons slot="start">
     <ion-back-button defaultHref="home"></ion-back-button>
   </ion-buttons>

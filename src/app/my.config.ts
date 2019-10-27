@@ -15,16 +15,16 @@ interface MyConfigType {
 
 
 const myconfig = {
-  head: '../assets/head/head.jpg',
-  sex: '女',
-  birthday: '199/10/21',
+  head: '../assets/head/8.jpg',
+  sex: '男',
+  birthday: '1975/11/07',
   phone: '18212345678',
   identity1: '大同分会',
-  identity2: '青苗',
-  industry: '互联网',
-  motto: '我是一个乖乖的程序员！！！！',
-  answer1: '目前在做网站以及app的开发工作！！',
-  answer2: '可以帮大家搭建网站，或者开发app等相关服务！！',
+  identity2: '弟子',
+  industry: '餐饮',
+  motto: '我是大同市妈妈菜创始人刘海泳',
+  answer1: '我目前在做妈妈菜的经营管理以及品牌加盟建设！！！',
+  answer2: '我可以为大家提供我多年来总结的中餐运营模式及管理方案！！！',
 }
 
 //夯实页面的数据
@@ -221,8 +221,8 @@ const assistanceItems = [
       thumbs: '24',
       comment: "15",
       progress: 0,
-      appreciate:"" 
-      }
+      appreciate: ""
+    }
   },
   {
     content: {
@@ -234,8 +234,8 @@ const assistanceItems = [
       thumbs: '24',
       comment: "15",
       progress: 3,
-      appreciate:"感谢各位同好的支持！！！我们一起努力把这个项目做大做强" 
-      }
+      appreciate: "感谢各位同好的支持！！！我们一起努力把这个项目做大做强"
+    }
   },
   {
     content: {
@@ -247,8 +247,8 @@ const assistanceItems = [
       thumbs: '24',
       comment: "15",
       progress: 1,
-      appreciate:"" 
-      }
+      appreciate: ""
+    }
   },
   {
     content: {
@@ -260,15 +260,15 @@ const assistanceItems = [
       thumbs: '24',
       comment: "15",
       progress: 2,
-      appreciate:"" 
-      }
+      appreciate: ""
+    }
   },
- 
+
 ]
 
 
 const rankingItems = {
-  winner:[
+  winner: [
     {
       header: '../assets/guild/1.jpg',
       name: '北京市分会',
@@ -294,7 +294,7 @@ const rankingItems = {
       score: '9582',
     },
   ],
-  content:[
+  content: [
     {
       header: '../assets/guild/1.jpg',
       name: '太原市分会',

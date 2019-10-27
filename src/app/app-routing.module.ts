@@ -5,13 +5,11 @@ import { NoticeService } from './services/notice.service';
 
 const routes: Routes = [
 
-  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
   { path: 'setting', loadChildren: './new-settings/new-settings.module#NewSettingsPageModule' },
   {
-    path: 'login/:id',
-    resolve: {
-      special: DataService
-    },
+    path: '',
+
     loadChildren: './pages/login/login.module#LoginPageModule'
   },
   { path: 'details', loadChildren: './pages/tab1-hot/tab1-hot.module#Tab1HotPageModule' },
@@ -33,6 +31,10 @@ const routes: Routes = [
     },
     loadChildren: './pages/notice-answer/notice-answer.module#NoticeAnswerPageModule'
   },
+  { path: 'classes', loadChildren: './pages/tab1-class/tab1-class.module#Tab1ClassPageModule' },
+  { path: 'release-test', loadChildren: './pages/release-test/release-test.module#ReleaseTestPageModule' },
+
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -6,7 +6,7 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     component: TabsPage,
     children: [
       {
@@ -16,7 +16,7 @@ const routes: Routes = [
       {
         path: 'tab2',
         loadChildren: '../tab2/tab2.module#Tab2PageModule'
-       
+
       },
       {
         path: 'tab3',
@@ -26,7 +26,7 @@ const routes: Routes = [
         path: 'release',
         loadChildren: '../pages/new-release/new-release.module#NewReleasePageModule'
       }
-    
+
     ]
   },
   {
@@ -40,7 +40,7 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class TabsPageRoutingModule {}
+export class TabsPageRoutingModule { }
 
 // {
 //   path: 'tab1/hot',

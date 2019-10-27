@@ -1,12 +1,12 @@
 <ion-content fullscreen>
-  <ion-card >
-    <ion-item  color="favorite" class="my-card-header" lines='none'>
+  <ion-card>
+    <ion-item color="favorite" class="my-card-header" lines='none'>
       <ion-avatar>
         <img [src]="user.head">
       </ion-avatar>
 
       <ion-label class='my-head-text'>
-        <h1>Gollum</h1>
+        <h1>刘海泳</h1>
         <p>463 &nbsp;&nbsp; 积分</p>
       </ion-label>
 
@@ -17,7 +17,7 @@
         <p>设置 </p>
       </ion-note>
     </ion-item>
-    <ion-card-content >
+    <ion-card-content>
       <ion-row class="my-tab">
         <ion-col size="3">
           <button>
@@ -85,23 +85,26 @@
         </ion-item>
       </ion-list>
       <ion-row class="my-controll">
-          <ion-col size="4">
-              <img src="../../assets/head/2.jpg" alt="">
-              <p>草稿箱</p>
-          </ion-col>
-          <ion-col size="4" >
-              <div routerLink='/business-card'>
-                  <img  src="../../assets/head/2.jpg" alt="">
-                  <p>名片</p>
-              </div>
-              
-          </ion-col>
-          <ion-col size="4">
-              <img src="../../assets/head/2.jpg" alt="">
-              <p>积分</p>
-          </ion-col>
-        </ion-row>
-   
+        <ion-col size="4">
+          <!-- <img src="../../assets/head/2.jpg" alt=""> -->
+          <fa-icon size='1x' [icon]="['fas', 'building']"></fa-icon>
+          <p>草稿箱</p>
+        </ion-col>
+        <ion-col size="4">
+          <div routerLink='/business-card'>
+            <fa-icon size='1x' [icon]="['fas', 'id-card']"></fa-icon>
+            <!-- <img src="../../assets/head/2.jpg" alt=""> -->
+            <p>名片</p>
+          </div>
+
+        </ion-col>
+        <ion-col size="4">
+          <fa-icon size='1x' [icon]="['fas', 'database']"></fa-icon>
+          <!-- <img src="../../assets/head/2.jpg" alt=""> -->
+          <p>积分</p>
+        </ion-col>
+      </ion-row>
+
     </ion-card-content>
   </ion-card>
 </ion-content>

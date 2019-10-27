@@ -9,9 +9,18 @@
       </ion-slide>
     </ion-slides>
   </div>
-  <ion-button (click)="onClick()">
-    Click me
-  </ion-button>
+  <div class="hot-page-warn">
+    <p>为推动偏远城市企业腾飞而 <span>奋斗终生</span></p>
+  </div>
+  <!-- <video style="width:100%" preload="metadata" [src]="video['video1']['url']" [poster]=" video['video1']['jpg']"
+    controls>
+    你的浏览器不支持 <code>video</code> 标签.
+  </video>
+  <video style="width:100%" preload="metadata" [src]="video['video2']['url']" [poster]="video['video2']['jpg']"
+    controls>
+    你的浏览器不支持 <code>video</code> 标签.
+  </video> -->
+
 
   <div class="my-card" *ngFor="let item of data; let i=index">
     <app-card-view-header [header]='item["cardHeader"]'></app-card-view-header>

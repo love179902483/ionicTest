@@ -7,7 +7,7 @@
         </div>
 
     </div>
-    <div>
+    <div class="task-answer-middle-ranking" *ngIf="notice.type==='0'">
         <p *ngFor="let item of notice.hasNoticed">
             <ion-avatar>
                 <img [src]="item.head">

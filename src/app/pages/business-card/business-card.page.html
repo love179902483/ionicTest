@@ -1,12 +1,12 @@
 <ion-content fullscreen>
   <ion-card color='favorite'>
-    <ion-item class="my-card-header"  color='favorite' lines='none'>
+    <ion-item class="my-card-header" color='favorite' lines='none'>
       <ion-avatar>
         <img [src]="user.head">
       </ion-avatar>
 
       <ion-label class='my-head-text'>
-        <h1>Gollum</h1>
+        <h1>刘海泳</h1>
         <p>463 &nbsp;&nbsp; 积分</p>
       </ion-label>
 
@@ -55,30 +55,30 @@
           <img [src]="user.head" alt="">
         </ion-col>
         <ion-col size="4">
-            <img [src]="user.head" alt="">
-          </ion-col>
-          <ion-col size="4">
-              <img [src]="user.head" alt="">
-            </ion-col>
+          <img [src]="user.head" alt="">
+        </ion-col>
+        <ion-col size="4">
+          <img [src]="user.head" alt="">
+        </ion-col>
 
       </ion-row>
       <div class="my-answer">
-          <h2>我目前的工作在做什么？</h2>
-          <p>{{user.answer1}}</p>
+        <h2>我目前的工作在做什么？</h2>
+        <p>{{user.answer1}}</p>
       </div>
-   
+
       <div>
-          <h2>我能给对方提供什么帮助？</h2>
-          <p>{{user.answer2}}</p>
+        <h2>我能给对方提供什么帮助？</h2>
+        <p>{{user.answer2}}</p>
       </div>
-        
-      
+
+
 
     </ion-card-content>
   </ion-card>
-  
+
   <div class="my-close" slot="fixed" (click)="backPage()">
-      <fa-icon size='1x' [icon]="['fas','times']"></fa-icon>
-</div>
+    <fa-icon size='1x' [icon]="['fas','times']"></fa-icon>
+  </div>
 
 </ion-content>

@@ -8,15 +8,15 @@ import { tampingContent } from '../../../my.config';
   styleUrls: ['./tamping-card-left.component.scss'],
 })
 export class TampingCardLeftComponent implements OnInit {
-  activeBtn = 1;
+  activeBtn = 0;
   tampingContent = tampingContent
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
-  onClick(index){
-    tampingContent['clickid'] = index ;
+  onClick(index) {
+    tampingContent['clickid'] = index;
     this.activeBtn = index;
   }
 }

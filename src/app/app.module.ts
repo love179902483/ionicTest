@@ -16,6 +16,8 @@ import { AppComponent } from './app.component';
 import { Camera } from '@ionic-native/camera/ngx';
 import { IonicStorageModule } from '@ionic/storage';
 
+// import { StreamingMedia, StreamingAudioOptions } from '@ionic-native/streaming-media';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
@@ -27,15 +29,15 @@ library.add(fas, far, fab)
 @NgModule({
   declarations: [AppComponent],  ///声明组件
   entryComponents: [],            //配置不会在模板中使用的组件
-  imports: [BrowserModule,FontAwesomeModule,  IonicModule.forRoot(), AppRoutingModule,   //引入模块
+  imports: [BrowserModule, FontAwesomeModule, IonicModule.forRoot(), AppRoutingModule,   //引入模块
     IonicStorageModule.forRoot()
   ],
   providers: [　          //配置服务
     StatusBar,
     SplashScreen,
     Camera,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

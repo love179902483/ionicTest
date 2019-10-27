@@ -6,7 +6,8 @@
                 <p>{{notice['timeStart']['timeDay']}} 日</p>
                 <p><span>{{notice['timeStart']['timeYear']}}年</span><span>{{notice['timeStart']['timeMonth']}}月</span>
                 </p>
-                <span>报</span>
+                <span *ngIf="notice['type']==='0'">报</span>
+                <span *ngIf="notice['type']==='1'">记</span>
             </div>
             <div class="my-task-card-content">
                 <h2>{{notice["title"]}}</h2>

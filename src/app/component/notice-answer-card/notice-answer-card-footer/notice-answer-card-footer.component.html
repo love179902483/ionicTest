@@ -1,4 +1,4 @@
-<div class="answer-footer">
+<div class="answer-footer" *ngIf='notice["type"]==="0"'>
     <p>我要报名</p>
     <ion-row class="answer-default">
         <ion-col size="4">
@@ -47,4 +47,24 @@
     <section class="full-width">
         <ion-button id="answer-submmit" color="warning" expand="full">我要报名</ion-button>
     </section>
+</div>
+
+<div class="answer-footer-bao" *ngIf='notice["type"]==="1"'>
+    <ul>
+        <li>确认接收</li>
+        <li *ngFor="let item of notice['noticedList']">
+            <p>{{item.name}}</p>
+            <p>{{item.company}}</p>
+
+            <p>
+                <fa-icon *ngIf="item['status']==='0'" class="font-green" size='1x' [icon]="['fas','check']"></fa-icon>
+                <fa-icon *ngIf="item['status']==='1'" class="font-red" size='1x' [icon]="['fas','times']"></fa-icon>
+            </p>
+        </li>
+    </ul>
+    <div slot="fixed">
+        <ion-button color="warning" expand="full">
+            确认接收
+        </ion-button>
+    </div>
 </div>

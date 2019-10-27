@@ -23,10 +23,16 @@ export class Tab1Page {
       url: '/tabs/tab1/ranking'
     },
     {
+      title: "课程",
+      name: 'class',
+      url: '/tabs/tab1/classes'
+    },
+    {
       title: "托起",
       name: 'assistance',
       url: '/tabs/tab1/assistance'
     },
+
     {
       title: "作业",
       name: 'task',
@@ -42,21 +48,21 @@ export class Tab1Page {
       name: 'chat',
       url: '/tabs/tab1/chat'
     },
-  ] 
-  
+  ]
 
-  constructor(private router: Router) {}
 
-  openHotLink(){
+  constructor(private router: Router) { }
+
+  openHotLink() {
     this.router.navigateByUrl('/tabs/tab1/hot')
   }
 
-  geturl(thisPath){
+  geturl(thisPath) {
     console.log(this.router.url)
-    for (let path of this.paths){
-       if (thisPath.url === path.url){
-         this.activeItem = path.name
-       }
+    for (let path of this.paths) {
+      if (thisPath.url === path.url) {
+        this.activeItem = path.name
+      }
     }
 
   }

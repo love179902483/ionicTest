@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-import {Subject} from 'rxjs';
+import { Subject } from 'rxjs';
 
 
 @Component({
@@ -11,12 +11,12 @@ import {Subject} from 'rxjs';
 export class NewReleasePage implements OnInit {
 
 
-  constructor( public navCtrl: NavController) { }
+  constructor(public navCtrl: NavController) { }
 
   ngOnInit() {
   }
 
-  backPage(){
-    this.navCtrl.goBack()
+  backPage() {
+
   }
 }
